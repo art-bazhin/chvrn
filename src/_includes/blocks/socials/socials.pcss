@@ -1,0 +1,39 @@
+.socials {
+  margin: -4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0;
+  width: 32px;
+  height: 32px;
+  background: $c-bg;
+  transition: background $t-duration;
+  margin: 4px;
+
+  @media(--md) {
+    &:hover, &:active {
+      background: $c-alt;
+    }
+  }
+
+  svg {
+    fill: $c-font;
+    transition: fill $t-duration;
+    width: 24px;
+  }
+
+  &--instagram svg,
+  &--spotify svg {
+    width: 20px;
+  }
+
+  &--facebook svg {
+    height: 20px;
+  }
+}

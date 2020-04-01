@@ -1,0 +1,43 @@
+.logo {
+  display: block;
+  max-width: 100%;
+  position: relative;
+
+  width: 180px;
+  height: 48px;
+
+  &:focus {
+    background: inherit;
+  }
+
+  @media(--md) {
+    width: 300px;
+    height: 82px;
+  }
+
+  @media(--lg) {
+    width: 400px;
+    height: 110px;
+  }
+}
+
+.logo__img {
+  background-image: url('/assets/img/logo.jpg');
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &--shifted {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url('/assets/img/logo-shifted.jpg');
+  }
+
+  &--shifted-alt {
+    background-image: url('/assets/img/logo-shifted-alt.jpg');
+  }
+}
+
