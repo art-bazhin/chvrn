@@ -1,5 +1,5 @@
 {
   "assetsImgFolder": "/assets/img/",
-  "coversFolder": "/img/covers",
-  "thumbnailsFolder": "/img/thumbnails"
+  "coversFolder": "/img/covers/",
+  "thumbnailsFolder": "/img/thumbnails/"
 }

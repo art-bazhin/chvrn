@@ -1,0 +1,7 @@
+include /blocks/thumbnail/thumbnail
+
+mixin releases
+  .releases
+    each page in collections.releases
+      .releases__col
+        +thumbnail(page)

@@ -1,0 +1,22 @@
+.thumbnail {
+  display: block;
+}
+
+.thumbnail__img {
+    display: block;
+    width: 100%;
+    transition: transform $t-duration, opacity $t-duration, filter $t-duration;
+    cursor: pointer;
+    filter: blur(0px);
+
+    &:hover {
+      transform: scale(1.1);
+      opacity: 0.25;
+      /* filter: blur(2px); */
+    }
+  }
+
+.thumbnail__wrap {
+  overflow: hidden;
+  outline: 1px solid rgba(255, 255, 255, 0.1);
+}

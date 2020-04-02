@@ -1,0 +1,6 @@
+mixin thumbnail(page)
+  a(href=page.url).thumbnail: .thumbnail__wrap
+    img(
+      src=config.thumbnailsFolder + page.data.release.cover
+      alt=page.data.release.title
+    ).thumbnail__img

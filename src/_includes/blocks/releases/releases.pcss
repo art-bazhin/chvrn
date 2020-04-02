@@ -1,0 +1,19 @@
+.releases {
+  @include row();
+}
+
+.releases__col {
+  @include col();
+
+  @media(--sm) {
+    @include col-width(1/2);
+  }
+
+  @media(--md) {
+    @include col-width(1/3);
+  }
+
+  @media(--lg) {
+    @include col-width(1/4);
+  }
+}
