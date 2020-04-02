@@ -136,7 +136,7 @@ const generateSitemap = function() {
     read: false
   })
     .pipe(sitemap({
-      siteUrl: 'http:/chvrn.link'
+      siteUrl: 'https:/chvrn.net'
     }))
     .pipe(dest(DIST));
 }
