@@ -48,39 +48,3 @@
     margin-top: 0;
   }
 }
-
-.test {
-  @include col();
-  @include col-width(1/4);
-  margin-top: 24px;
-
-  img {
-    display: block;
-    width: 100%;
-    transition: transform $t-duration, opacity $t-duration, filter $t-duration;
-    cursor: pointer;
-    filter: blur(0px);
-
-    &:hover {
-      transform: scale(1.1);
-      opacity: 0.25;
-      filter: blur(2px);
-    }
-  }
-}
-
-.test__wrap {
-  overflow: hidden;
-  outline: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.test2 {
-  @include col();
-  @include col-width(6/12);
-  margin-top: 24px;
-}
-
-.spotify {
-  display: block;
-  width: 100%;
-}

@@ -1,7 +1,6 @@
 extends base.pug
 
 block content
-  .container
-    h1: no-typography #{ release.title } - #{ release.type || 'Single' }
+  h1: no-typography #{ release.title } - #{ release.type || 'Single' }
 
-    div !{ content }
+  div !{ content }
