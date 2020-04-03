@@ -24,8 +24,8 @@ const ROOT = './src/_root/**/*'
 const IMG = './src/img/';
 const DIST = './dist/';
 
-const COVER_WIDTH = 1200;
-const THUMBNAIL_WIDTH = 600;
+const COVER_WIDTH = 1048;
+const THUMBNAIL_WIDTH = 524;
 
 const BABEL_CONFIG = {
   presets: [
@@ -93,7 +93,7 @@ const covers = function() {
     .pipe(resize({
       width : COVER_WIDTH,
       height : COVER_WIDTH,
-      quality: 0.7,
+      quality: 0.6,
       format: 'jpg'
     }))
     .pipe(dest(DIST + 'img/covers/'));
@@ -104,7 +104,7 @@ const thumbnails = function() {
     .pipe(resize({
       width : THUMBNAIL_WIDTH,
       height : THUMBNAIL_WIDTH,
-      quality: 0.7,
+      quality: 0.6,
       format: 'jpg'
     }))
     .pipe(dest(DIST + 'img/thumbnails/'));
