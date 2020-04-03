@@ -17,9 +17,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(cacheBuster(cacheBusterOptions));
 
   eleventyConfig.addCollection('releases', function(collection) {
-    return collection.getAllSorted()
+    return collection.getAll()
       .filter(el => el.data.release)
-      .sort((a, b) => (new Date(a.data.releaseDate).valueOf() - new Date(b.data.releaseDate).valueOf()));
+      .sort((a, b) => (new Date(b.data.release.date).valueOf() - new Date(a.data.release.date).valueOf()));
   });
 
   return {

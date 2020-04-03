@@ -1,6 +1,6 @@
 extends base.pug
 
-block content
-  h1: no-typography #{ release.title } - #{ release.type || 'Single' }
+include /blocks/release/release
 
-  div !{ content }
+block content
+  +release

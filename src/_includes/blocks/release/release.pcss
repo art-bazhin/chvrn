@@ -1,0 +1,51 @@
+.release {
+  @include row();
+  padding-bottom: 48px;
+}
+
+.release__col {
+  @include col();
+
+  &--left {
+    @media(--md) {
+      @include col-width(1/2);
+    }
+
+    @media(--lg) {
+      @include col-width(5/12);
+    }
+  }
+
+  &--right {
+    margin-top: 32px;
+
+    @media(--md) {
+      @include col-width(1/2);
+      margin-top: 0;
+    }
+
+    @media(--lg) {
+      @include col-width(7/12);
+    }
+  }
+}
+
+.release__links > * + * {
+  margin-top: 2px;
+}
+
+.release__cover {
+  display: block;
+  width: 100%;
+  outline: 1px solid rgba(255, 255, 255, 0.07);
+  margin-bottom: 16px;
+}
+
+.release__player {
+  display: block;
+  width: 100%;
+}
+
+.release__title {
+  margin-bottom: 16px;
+}

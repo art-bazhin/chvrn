@@ -17,14 +17,14 @@
       counter++;
       counter %= 250;
 
-      if (counter > 240) shifted.setAttribute('style', 'opacity: 1');
-      else shifted.setAttribute('style', 'opacity: 0');
+      if (counter > 240) shifted.setAttribute('style', 'visibility: visible');
+      else shifted.setAttribute('style', 'visibility: hidden');
 
       counterAlt++;
       counterAlt %= 375;
 
-      if (counterAlt > 368) shiftedAlt.setAttribute('style', 'opacity: 1');
-      else shiftedAlt.setAttribute('style', 'opacity: 0');
+      if (counterAlt > 368) shiftedAlt.setAttribute('style', 'visibility: visible');
+      else shiftedAlt.setAttribute('style', 'visibility: hidden');
 
       runFrame();
     });

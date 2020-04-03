@@ -1,0 +1,10 @@
+include /svg/spotify
+
+mixin platform-link
+  a(href="#").platform-link
+    span.platform-link__title-group
+      span.platform-link__icon
+        span.platform-link__icon-glow: +spotify
+        +spotify
+      span.platform-link__title Spotify
+    span.platform-link__action Play
