@@ -20,10 +20,17 @@ mixin release
     .release__col.release__col--right
       h1.release__title: no-typography #{ release.title } - #{ release.type || 'Single' }
       .release__links
-        +platform-link
-        +platform-link
-        +platform-link
-        +platform-link
+        +platform-link('spotify')
+        +platform-link('apple')
+        +platform-link('soundcloud')
+        +platform-link('google')
+        +platform-link('youtube')
+        +platform-link('vk')
+        +platform-link('boom')
+        +platform-link('deezer')
+
+        +platform-link('itunes')
+        +platform-link('bandcamp')
 
   // h1: no-typography #{ release.title } - #{ release.type || 'Single' }
 

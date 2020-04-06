@@ -1,10 +1,70 @@
 include /svg/spotify
+include /svg/apple
+include /svg/itunes
+include /svg/vk
+include /svg/boom
+include /svg/soundcloud
+include /svg/bandcamp
+include /svg/google
+include /svg/youtube
+include /svg/deezer
 
-mixin platform-link
-  a(href="#").platform-link
+mixin platform-link(platform)
+  -
+    var link;
+
+    var name = {
+      spotify: 'Spotify',
+      vk: 'VK Music',
+      boom: 'BOOM',
+      soundcloud: 'Soundcloud',
+      apple: 'Apple Music',
+      itunes: 'iTunes',
+      bandcamp: 'Bandcamp',
+      google: 'Google Play',
+      youtube: 'YouTube',
+      deezer: 'Deezer'
+    }[platform]
+
+    var action = {
+      itunes: 'Buy',
+      bandcamp: 'Buy'
+    }[platform] || 'Play';
+
+    if (platform === 'spotify') {
+      link = 'https://open.spotify.com/album/' + release.spotifyId;
+    } else if (platform === 'itunes') {
+      link = release['apple'] + '?app=itunes';
+    } else {
+      link = release[platform];
+    }
+
+  mixin icon(platform)
+    if (platform === 'spotify')
+      +spotify
+    if (platform === 'vk')
+      +vk
+    if (platform === 'boom')
+      +boom
+    if (platform === 'soundcloud')
+      +soundcloud
+    if (platform === 'apple')
+      +apple
+    if (platform === 'itunes')
+      +itunes
+    if (platform === 'bandcamp')
+      +bandcamp
+    if (platform === 'google')
+      +google
+    if (platform === 'youtube')
+      +youtube
+    if (platform === 'deezer')
+      +deezer
+
+  a(href=link target="_blank").platform-link
     span.platform-link__title-group
       span.platform-link__icon
-        span.platform-link__icon-glow: +spotify
-        +spotify
-      span.platform-link__title Spotify
-    span.platform-link__action Play
+        span.platform-link__icon-glow: +icon(platform)
+        +icon(platform)
+      span.platform-link__title #{ name }
+    span.platform-link__action #{ action }
