@@ -1,5 +1,22 @@
 .releases {
+  padding-bottom: 24px;
+
+  @media(--sm) {
+    padding-bottom: 32px;
+  }
+
+  @media(--md) {
+    padding-bottom: 40px;
+  }
+
+  @media(--lg) {
+    padding-bottom: 48px;
+  }
+}
+
+.releases__row {
   @include row();
+  margin-bottom: -32px;
 }
 
 .releases__col {

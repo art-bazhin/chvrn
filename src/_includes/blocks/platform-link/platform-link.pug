@@ -8,6 +8,9 @@ include /svg/bandcamp
 include /svg/google
 include /svg/youtube
 include /svg/deezer
+include /svg/amazon
+include /svg/yandex
+include /svg/download
 
 mixin platform-link(platform)
   -
@@ -23,12 +26,17 @@ mixin platform-link(platform)
       bandcamp: 'Bandcamp',
       google: 'Google Play',
       youtube: 'YouTube',
-      deezer: 'Deezer'
+      deezer: 'Deezer',
+      amazon: 'Amazon',
+      yandex: 'Yandex Music',
+      download: 'Free MP3'
     }[platform]
 
     var action = {
       itunes: 'Buy',
-      bandcamp: 'Buy'
+      bandcamp: 'Buy',
+      amazon: 'Buy',
+      download: 'Download'
     }[platform] || 'Play';
 
     if (platform === 'spotify') {
@@ -60,6 +68,12 @@ mixin platform-link(platform)
       +youtube
     if (platform === 'deezer')
       +deezer
+    if (platform === 'amazon')
+      +amazon
+    if (platform === 'yandex')
+      +yandex
+    if (platform === 'download')
+      +download
 
   a(href=link target="_blank").platform-link
     span.platform-link__title-group

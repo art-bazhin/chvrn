@@ -15,6 +15,7 @@ mixin release
         frameborder="0"
         allowtransparency="true"
         allow="encrypted-media"
+        class=(release.type && release.type !== 'Single' ? 'release__player--album' : '')
       ).release__player
 
     .release__col.release__col--right
@@ -25,13 +26,13 @@ mixin release
         +platform-link('soundcloud')
         +platform-link('google')
         +platform-link('youtube')
+        +platform-link('yandex')
         +platform-link('vk')
         +platform-link('boom')
         +platform-link('deezer')
 
         +platform-link('itunes')
         +platform-link('bandcamp')
-
-  // h1: no-typography #{ release.title } - #{ release.type || 'Single' }
-
-  // div !{ content }
+        +platform-link('amazon')
+        
+        +platform-link('download')

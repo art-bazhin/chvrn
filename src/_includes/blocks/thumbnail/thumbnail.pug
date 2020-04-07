@@ -1,6 +1,10 @@
 mixin thumbnail(page)
-  a(href=page.url).thumbnail: .thumbnail__wrap
-    img(
-      src=config.thumbnailsFolder + page.data.release.cover
-      alt=page.data.release.title
-    ).thumbnail__img
+  a(href=page.url).thumbnail
+    .thumbnail__wrap
+      img(
+        src=config.thumbnailsFolder + page.data.release.cover
+        alt=page.data.release.title
+      ).thumbnail__img
+
+    span.thumbnail__title-wrap
+      span.thumbnail__title #{ page.data.release.title }
