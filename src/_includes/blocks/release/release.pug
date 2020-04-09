@@ -7,7 +7,7 @@ mixin release
         src=config.coversFolder + release.cover
         alt=release.title
       ).release__cover
-
+    
       iframe(
         src=`https://open.spotify.com/embed/album/${release.spotifyId}`
         width="300"
@@ -16,6 +16,7 @@ mixin release
         allowtransparency="true"
         allow="encrypted-media"
         class=(release.type && release.type !== 'Single' ? 'release__player--album' : '')
+        title="Spotify Player"
       ).release__player
 
     .release__col.release__col--right

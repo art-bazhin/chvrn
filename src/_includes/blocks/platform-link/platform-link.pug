@@ -75,7 +75,7 @@ mixin platform-link(platform)
     if (platform === 'download')
       +download
 
-  a(href=link target="_blank").platform-link
+  a(href=link target="_blank" rel="noopener" title=name).platform-link
     span.platform-link__title-group
       span.platform-link__icon
         span.platform-link__icon-glow: +icon(platform)
