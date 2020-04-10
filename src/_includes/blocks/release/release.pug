@@ -12,8 +12,6 @@ mixin release
         src=`https://open.spotify.com/embed/album/${release.spotifyId}`
         width="300"
         height="80"
-        frameborder="0"
-        allowtransparency="true"
         allow="encrypted-media"
         class=(release.type && release.type !== 'Single' ? 'release__player--album' : '')
         title="Spotify Player"
