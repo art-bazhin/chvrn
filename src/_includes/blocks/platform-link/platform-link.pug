@@ -76,10 +76,11 @@ mixin platform-link(platform)
     if (platform === 'download')
       +download
 
-  a(href=link target="_blank" rel="noopener" title=name).platform-link
-    span.platform-link__title-group
-      span.platform-link__icon
-        span.platform-link__icon-glow: +icon(platform)
-        +icon(platform)
-      span.platform-link__title #{ name }
-    span.platform-link__action #{ action }
+  if(link)
+    a(href=link target="_blank" rel="noopener" title=name).platform-link
+      span.platform-link__title-group
+        span.platform-link__icon
+          span.platform-link__icon-glow: +icon(platform)
+          +icon(platform)
+        span.platform-link__title #{ name }
+      span.platform-link__action #{ action }

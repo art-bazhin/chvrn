@@ -12,7 +12,7 @@ release:
   soundcloud: 'https://soundcloud.com/chvrn/sidewalks-feat-landechoe'
   bandcamp: 'https://chvrn.bandcamp.com/track/sidewalks-feat-landechoe'
   google: 'https://play.google.com/store/music/album/CHVRN_Sidewalks_feat_Landechoe?id=Bw2lplckvvi4laotgoyug2ubh3m'
-  youtube: 'https://www.youtube.com/watch?v=19s9i6r2JNE'
+  youtube: 'https://music.youtube.com/browse/MPREb_YsPwXWjxNMb'
   deezer: 'https://www.deezer.com/album/138276772'
   boom: 'https://boom.ru/redirect/album/9719728'
   vk: 'https://vk.com/music/album/-2000886416_6886416_addb39ce7d3f10b2ac'
