@@ -15,7 +15,8 @@ html(lang="en")
     meta(name="msapplication-TileColor", content="#000000")
     meta(name="theme-color" content="#141414")
 
-    meta(name="description" content=(description || site.description))
+    meta(name="keywords" content=site.keywords)
+    meta(name="description" content=(description || (release ? site.releaseDescription : site.description)))
     title #{ release ? `${release.title} - ${release.type || 'Single'}` + ' | ' : '' }#{ site.title }
 
     link(rel="stylesheet", href="/style.css")
@@ -24,6 +25,19 @@ html(lang="en")
     if (release)
       link(rel="preconnect" href="https://i.scdn.co")
       link(rel="preconnect" href="https://open.scdn.co")
+      meta(property="og:title" content=`${release.title} - ${release.type || 'Single'}`)
+      meta(property="og:description" content=(description || site.releaseDescription))
+      meta(property="og:type" content="music.album")
+      meta(property="og:url" content=(site.domain + page.url))
+      meta(property="og:image" content=(config.coversFolder + release.cover))
+      meta(property="og:site_name" content="CHVRN")
+    else
+      meta(property="og:title" content=site.title)
+      meta(property="og:description" content=site.description)
+      meta(property="og:type" content="profile")
+      meta(property="og:url" content=(site.domain + page.url))
+      meta(property="og:image" content=(config.assetsImgFolder + 'og.jpg'))
+      meta(property="og:site_name" content="CHVRN")
 
     script(type="text/javascript").
       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
