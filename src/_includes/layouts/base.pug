@@ -23,6 +23,7 @@ html(lang="en")
     link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet")
 
     meta(property="fb:app_id" content="240736410623658")
+    meta(property="twitter:site" content="@chvrnmusic")
 
     if (release)
       link(rel="preconnect" href="https://i.scdn.co")
@@ -35,15 +36,17 @@ html(lang="en")
       meta(property="og:image:width" content="1048")
       meta(property="og:image:height" content="1048")
       meta(property="og:site_name" content="CHVRN")
+      meta(property="twitter:image" content=(site.domain + config.coversFolder + release.cover))
     else
       meta(property="og:title" content=site.title)
       meta(property="og:description" content=site.description)
       meta(property="og:type" content="profile")
       meta(property="og:url" content=(site.domain + page.url))
-      meta(property="og:image" content=(site.domain + 'og.jpg'))
+      meta(property="og:image" content=(site.domain + '/og.jpg'))
       meta(property="og:image:width" content="1200")
       meta(property="og:image:height" content="630")
       meta(property="og:site_name" content="CHVRN")
+      meta(property="twitter:image" content=(site.domain + '/twitter.jpg'))
 
     script(type="text/javascript").
       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
