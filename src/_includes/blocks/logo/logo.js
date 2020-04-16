@@ -1,4 +1,6 @@
 (function() {
+  const LOOP_TIME = 300;
+
   const logo = document.getElementById('logo');
   const shifted = document.getElementById('logo-img-shifted');
   const shiftedAlt = document.getElementById('logo-img-shifted-alt');
@@ -6,8 +8,21 @@
   let counter = 0;
   let counterAlt = 0;
 
+  const opacityCache = {};
+  let iteration = 0;
+
   function getOpacity() {
-    return 0.8 + Math.random() / 4;
+    let value = opacityCache[iteration];
+
+    if (!value) {
+      value = 0.8 + Math.random() / 4;
+      opacityCache[iteration] = value;
+    }
+
+    iteration++;
+    iteration %= LOOP_TIME;
+
+    return value;
   }
 
   function runFrame() {
