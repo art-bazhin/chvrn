@@ -1,3 +1,4 @@
 User-agent: *
 Sitemap: https://chvrn.net/sitemap.xml
 Disallow: /assets
+Disallow: /404
