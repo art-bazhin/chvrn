@@ -19,5 +19,5 @@ release:
   vk: 'https://vk.com/music/album/-2000129082_5129082_5e23113a59b533828c'
   yandex: 'https://music.yandex.ru/album/3159991'
   amazon: 'https://www.amazon.com/Fall-Chvrn/dp/B07VGLNCTR'
-  download: 'https://yadi.sk/d/gliqaCfgBnSnhg'
+  download: 'https://disk.yandex.ru/d/x7AVKFnFn45G2A'
 ---
