@@ -8,7 +8,7 @@ release:
 
   spotifyId: "1NP2aug5mDSeSsIMmR2MwY"
 
-  apple: "https://music.apple.com/album/promises-single/1681907118"
+  apple: "https://music.apple.com/album/promises-single/1682030200"
   soundcloud: "https://soundcloud.com/chvrn/promises"
   bandcamp: "https://chvrn.bandcamp.com/track/promises"
   youtube: "https://music.youtube.com/playlist?list=OLAK5uy_mCO3ukx7a7If0vs7QWwHzMH9hDUImPwes"

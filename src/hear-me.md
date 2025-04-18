@@ -8,7 +8,7 @@ release:
 
   spotifyId: "0woSZlQ9vVd916PdGLNIht"
 
-  apple: "https://music.apple.com/album/hear-me-single/1699138769"
+  apple: "https://music.apple.com/album/hear-me-single/1699293128"
   soundcloud: "https://soundcloud.com/chvrn/hear-me"
   bandcamp: "https://chvrn.bandcamp.com/track/hear-me"
   youtube: "https://music.youtube.com/playlist?list=OLAK5uy_kAI04N8oKzFOhIWSXd6T_CyN62Arn_iZA"

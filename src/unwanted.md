@@ -8,7 +8,7 @@ release:
 
   spotifyId: "25gKo733pgHWFrCO4PPPmN"
 
-  apple: "https://music.apple.com/album/unwanted-single/1702796396"
+  apple: "https://music.apple.com/album/unwanted-single/1703247158"
   soundcloud: "https://soundcloud.com/chvrn/unwanted-1"
   bandcamp: "https://chvrn.bandcamp.com/track/unwanted"
   youtube: "https://music.youtube.com/playlist?list=OLAK5uy_lhnNhYccCMTwYmYxJOgyOCbPwWErAwC28"

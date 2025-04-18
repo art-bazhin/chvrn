@@ -8,7 +8,7 @@ release:
 
   spotifyId: "5tsUIsQTsgLcyTQs7OUkHT"
 
-  apple: "https://music.apple.com/album/crystal-single/1676054919"
+  apple: "https://music.apple.com/album/crystal-single/1676390315"
   soundcloud: "https://soundcloud.com/chvrn/crystal"
   bandcamp: "https://chvrn.bandcamp.com/track/crystal"
   youtube: "https://music.youtube.com/playlist?list=OLAK5uy_nFW2nMMoRlW4Sq0tjvzfLIpPGGIYRnBvM"
