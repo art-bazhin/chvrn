@@ -9,8 +9,8 @@ release:
   spotifyId: "2IBwJd4vmKcplKRg14Qjrv"
 
   apple: "https://music.apple.com/album/neon-dance-single/1807570721"
-  # soundcloud: "https://soundcloud.com/chvrn/unwanted-1"
-  # bandcamp: "https://chvrn.bandcamp.com/track/unwanted"
+  # soundcloud: "https://soundcloud.com/chvrn/neon-dance"
+  # bandcamp: "https://chvrn.bandcamp.com/track/neon-dance"
   youtube: "https://music.youtube.com/playlist?list=OLAK5uy_kq6zjZ3BFF0kWwGThGVY2somoSKpGkNII"
   deezer: "https://www.deezer.com/album/740705621"
   vk: "https://vk.com/music/album/-2000833340_23833340_ee043cc727b748b55e"
